@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'tel:+74995356434'
     })
 
+    // Blocking empty Links
     function eventFn(e) {
         e.preventDefault()
     }
-
-    // Blocking empty Links
+    
     document.querySelector('.primary__item-logo').addEventListener('click', eventFn)
     document.querySelector('.copyright__descr-link').addEventListener('click', eventFn)
     document.querySelectorAll('.socialnetworks-link').forEach((link) => link.addEventListener('click', eventFn))
