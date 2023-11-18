@@ -1,0 +1,29 @@
+/* ____________________ Advantages (SECTION) ____________________ */
+
+.advantages {
+    padding-top: 70px;
+}
+
+.advantages__content {
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+/* __________ Advantages Cards __________ */
+
+.advantages-cards {
+    padding: 40px 45px 31px 45px;
+    max-width: 276px;
+    max-height: 576px;
+    width: 100%;
+    border-radius: var(--borrad-1);
+    background-color: var(--color_white);
+}
+
+.advantages-cards__descr {
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--color_black);
+}

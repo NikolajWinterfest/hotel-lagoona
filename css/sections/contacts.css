@@ -1,0 +1,171 @@
+/* ____________________ Contacts (SECTION) ____________________ */
+
+.contacts {
+    padding-top: 71px;
+}
+
+.contacts__content {
+    border-radius: var(--borrad-1);
+    background-color: var(--color_white);
+}
+
+.contacts-info {
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.communication {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 52px;
+    max-width: 375px;
+    width: 100%;
+}
+
+.information-item {
+    justify-content: space-between;
+    padding-bottom: 23px;
+    border-bottom: 1px solid var(--color_gray-2)
+}
+
+.information-item:not(:first-child) {
+    padding-top: 23px;
+}
+
+.information-item:nth-child(2) {
+    padding-bottom: 13px;
+}
+
+.information-item:nth-child(3) {
+    padding-bottom: 16px;
+}
+
+.information-item:last-child {
+    margin-bottom: 45px;
+}
+
+.information-list__address-title,
+.information-list__phones-title,
+.information-list__emails-title,
+.information-list__schedule-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: normal;
+    color: var(--color_black);
+}
+
+.information-list__address-descr,
+.schedule-time__days,
+.schedule-time__hours {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color_black);
+}
+
+.information-list__address-descr,
+.information-list__phones-links,
+.information-list__emails-links,
+.information-list__schedule-time {
+    max-width: 229px;
+}
+
+.phones-links__tel,
+.emails-links__reservation-link,
+.emails-links__cooperation-link {
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color_gold-2);
+    outline: none;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.emails-links__reservation-text,
+.emails-links__cooperation-text {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color_gray-3);
+}
+
+.emails-links__cooperation-text {
+    transform: translate(2px, -2px);
+}
+
+.schedule-time__days,
+.schedule-time__hours {
+    display: inline-block;
+}
+
+.communication__routbuild-btn {
+    width: 213px;
+    height: 70px;
+    border: 1px solid var(--color_gold-2);
+    border-radius: var(--borrad-2);
+    color: var(--color_gold-2);
+    outline: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Phones */
+
+.information-list__phones-links:nth-child(1) {
+    transform: translate(-3px, -1px);
+}
+
+.information-list__phones-links:nth-child(2) {
+    transform: translate(-3px, -4px);
+}
+
+/* Email's */
+
+.emails-links__cooperation {
+    transform: translate(-2px, -3px);
+}
+
+/* -(pseudo-elements for Link's and Button "Rout Build")- */
+
+.phones-links__tel:focus-visible,
+.emails-links__reservation-link:focus-visible,
+.emails-links__cooperation-link:focus-visible {
+    border-color: var(--color_gold-2);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.phones-links__tel:hover,
+.emails-links__reservation-link:hover,
+.emails-links__cooperation-link:hover {
+    border-color: transparent;
+    color: var(--color_gold-1);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.phones-links__tel:active,
+.emails-links__reservation-link:active,
+.emails-links__cooperation-link:active {
+    border-color: transparent;
+    color: var(--color_gold-3);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.communication__routbuild-btn:focus-visible {
+    color: var(--color_white);
+    background-color: var(--color_gold-2);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+@media(any-hover: hover) {
+    .communication__routbuild-btn:hover {
+        color: var(--color_white);
+        background-color: var(--color_gold-2);
+        transition: color 0.3s, background-color 0.3s;
+    }
+}
+
+.communication__routbuild-btn:active {
+    color: var(--color_white);
+    background-color: var(--color_gold-3);
+    transition: color 0.3s, background-color 0.3s;
+}

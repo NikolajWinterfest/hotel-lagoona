@@ -1,0 +1,35 @@
+/* Fonts */
+@import url('fonts/fonts.css');
+
+/* Default Settings */
+@import url('globals/default.css');
+
+/* Global Settings */
+@import url('globals/global.css');
+
+/* Header Section */
+@import url('sections/header.css');
+
+/* Main and Special Offers Section */
+@import url('sections/specialoffers.css');
+
+/* About Us Section */
+@import url('sections/aboutus.css');
+
+/* Services Section */
+@import url('sections/services.css');
+
+/* Advantages Section */
+@import url('sections/advantages.css');
+
+/* Accommodation Section */
+@import url('sections/placement.css');
+
+/* Reservation Section */
+@import url('sections/reservation.css');
+
+/* Contacts Section */
+@import url('sections/contacts.css');
+
+/* Footer Section */
+@import url('sections/footer.css');

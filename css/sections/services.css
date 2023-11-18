@@ -1,0 +1,110 @@
+/* ____________________ Services (SECTION) ____________________ */
+
+.services {
+    padding-top: 70px;
+}
+
+.services__content {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* __________ Services Cards __________ */
+
+.services__cards {
+    position: relative;
+    flex-direction: column;
+    border-radius: var(--borrad-1);
+    max-width: 573px;
+    max-height: 330px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.picture-services__photo {
+    border-top-left-radius: var(--borrad-1);
+    border-top-right-radius: var(--borrad-1);
+}
+
+.information-services {
+    padding: 26px 35px 45px 45px;
+    min-height: 165px;
+    border-bottom-left-radius: var(--borrad-1);
+    border-bottom-right-radius: var(--borrad-1);
+    background-color: var(--color_white);
+}
+
+.information-services__title {
+    display: inline-flex;
+    align-items: center;
+    max-width: 410px;
+}
+
+.information-services__title-text {
+    margin-right: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: var(--color_gold-2);
+    transition: color 0.3s;
+}
+
+.information-services__descr {
+    max-width: 410px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--color_black);
+}
+
+.information-services__title-arrow-icon path {
+    transition: stroke 0.3s;
+}
+
+/* -(pseudo-elements for Cards of Block Services)- */
+
+.services__cards::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.services__cards:focus-visible::before {
+    border-color: var(--color_gold-2);
+    transition: border-color 0.3s;
+}
+
+@media(any-hover: hover) {
+    .services__cards:hover .information-services__title-text {
+        color: var(--color_gold-1);
+        transition: color 0.3s;
+    }
+
+    .services__cards:hover .information-services__title-arrow-icon path {
+        stroke: var(--color_gold-1);
+        transition: stroke 0.3s;
+    }
+
+    .services__cards:hover::before,
+    .services__cards:active::before {
+        border-color: transparent;
+        transition: border-color 0.3s;
+    }
+}
+
+.services__cards:active .information-services__title-text {
+    color: var(--color_gold-3);
+    transition: color 0.3s;
+}
+
+.services__cards:active .information-services__title-arrow-icon path {
+    stroke: var(--color_gold-3);
+    transition: stroke 0.3s;
+}

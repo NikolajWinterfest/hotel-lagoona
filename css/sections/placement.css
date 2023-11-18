@@ -1,0 +1,214 @@
+/* ____________________ Placement (SECTION) ____________________ */
+
+.placement {
+    padding-top: 70px;
+}
+
+.placement__content {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* __________ Hotel Cards __________ */
+
+.item-card {
+    max-width: 374px;
+    width: 100%;
+    max-height: 440px;
+    border-radius: var(--borrad-1);
+    background-color: var(--color_white);
+}
+
+/* _____ Photo of Hotel _____ */
+
+.item-card__photoblock-photo {
+    border-top-left-radius: var(--borrad-1);
+    border-top-right-radius: var(--borrad-1);
+}
+
+/* _____ Info about Hotel _____ */
+
+.item-card__information {
+    padding: 27px 45px 45px;
+    justify-content: space-between;
+}
+
+.card-info {
+    flex-direction: column;
+}
+
+.card-info__price-rating {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info__price {
+    padding-bottom: 16px;
+}
+
+.card-info__price-from {
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color_gray-4);
+}
+
+.card-info__price-number {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: normal;
+    color: var(--color_black);
+}
+
+.card-info__price-night {
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color_black);
+}
+
+.card-info__rating {
+    gap: 6px;
+    transform: translateY(-6px);
+}
+
+.card-info__hotel {
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: normal;
+    transform: translateY(-2px);
+    color: var(--color_black);
+}
+
+.card-info__country {
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color_gray-3);
+}
+
+.card-info__rooms-btn {
+    width: 100px;
+    height: 42px;
+    border: 1px solid var(--color_gold-2);
+    border-radius: var(--borrad-2);
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color_gold-2);
+    outline: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.item-card__picture {
+    transform: translateY(9px);
+}
+
+/* -(pseudo-elements for Buttons "Rooms")- */
+
+.card-info__rooms-btn:focus-visible {
+    color: var(--color_white);
+    background-color: var(--color_gold-2);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+@media(any-hover: hover) {
+    .card-info__rooms-btn:hover {
+        color: var(--color_white);
+        background-color: var(--color_gold-2);
+        transition: color 0.3s, background-color 0.3s;
+    }
+}
+
+.card-info__rooms-btn:active {
+    color: var(--color_white);
+    background-color: var(--color_gold-3);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* __________ Watch More Card __________ */
+
+.watch-more {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 440px;
+    background: var(--color_linear-2), url('../../img/placement/placement__photo-9.jpg');
+    background-size: cover;
+    outline: none;
+    cursor: pointer;
+}
+
+.watch-more__content {
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.watch-more__text {
+    margin-right: 10px;
+}
+
+.watch-more__text-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 200%;
+    color: var(--color_white);
+    transition: color 0.3s;
+}
+
+.watch-more__arrow-icon path {
+    transition: stroke 0.3s;
+}
+
+/* -(pseudo-elements for Card)- */
+
+.watch-more::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.watch-more:focus-visible::before {
+    border-color: var(--color_gold-2);
+    transition: border-color 0.3s;
+}
+
+.watch-more:focus-visible .watch-more__text-link {
+    color: var(--color_gold-2);
+    transition: color 0.3s;
+}
+
+.watch-more:focus-visible .watch-more__arrow-icon path {
+    stroke: var(--color_gold-2);
+    transition: stroke 0.3s;
+}
+
+@media(any-hover: hover) {
+    .watch-more:hover::before {
+        border-color: transparent;
+        transition: border-color 0.3s;
+    }
+
+    .watch-more:hover .watch-more__text-link {
+        color: var(--color_gold-2);
+        transition: color 0.3s;
+    }
+
+    .watch-more:hover .watch-more__arrow-icon path {
+        stroke: var(--color_gold-2);
+        transition: stroke 0.3s;
+    }
+}
+
+.watch-more:active .watch-more__text-link {
+    color: var(--color_gold-3);
+    transition: color 0.3s;
+}
+
+.watch-more:active .watch-more__arrow-icon path {
+    stroke: var(--color_gold-3);
+    transition: stroke 0.3s;
+}

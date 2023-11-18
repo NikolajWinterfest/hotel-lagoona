@@ -1,0 +1,165 @@
+/* _________________________ MAIN _________________________ */
+
+.main {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+/* ____________________ SpecialOffers (SECTION) ____________________ */
+
+.specialoffers__headtitle {
+    display: none;
+}
+
+/* __________ Firstblock __________ */
+
+.firstblock {
+    margin-right: 24px;
+    max-width: 573px;
+    width: 100%;
+}
+
+.firstblock__list {
+    flex-direction: column;
+    max-width: 573px;
+    width: 100%;
+}
+
+.firstblock__item {
+    width: 100%;
+    height: 258px;
+    border-radius: var(--borrad-1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firstblock__item:nth-child(1) {
+    margin-bottom: 24px;
+    background-image: var(--color_linear-1), url('../../img/specialoffers/specialoffers__background-first.jpg');
+}
+
+.firstblock__item:nth-child(2) {
+    background-image: var(--color_linear-1), url('../../img/specialoffers/specialoffers__background-second.jpg');
+}
+
+.item-info {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.item-info__list {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 45px;
+    height: 100%;
+}
+
+.item-info__item-title {
+    padding-bottom: 15px;
+    max-width: 420px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: normal;
+    color: var(--color_white);
+}
+
+.item-info__item-price {
+    max-width: 220px;
+    font-size: 20px;
+    line-height: normal;
+    color: var(--color_white);
+}
+
+.more-item__more {
+    display: inline-flex;
+    align-items: center;
+    max-width: 220px;
+}
+
+.more-item__text {
+    margin-right: 5px;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color_gold-1);
+    transition: color 0.3s;
+}
+
+/* __________ Secondblock __________ */
+
+.secondblock {
+    position: relative;
+    max-width: 573px;
+    max-height: 540px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.luxuryoffer {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 214px 45px 40px 45px;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/specialoffers/specialoffers__background-third.jpg');
+    border-radius: var(--borrad-1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.luxuryoffer__item-title {
+    padding-bottom: 9px;
+    max-width: 350px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: normal;
+    color: var(--color_white);
+}
+
+.luxuryoffer__item-price {
+    font-size: 30px;
+    line-height: normal;
+    color: var(--color_white);
+}
+
+/* -(peusdo-elements for Cards)- */
+
+.item-info::before,
+.secondblock::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.item-info:focus-visible::before,
+.secondblock:focus-visible::before {
+    border-color: var(--color_gold-2);
+    transition: border-color 0.3s;
+}
+
+@media(any-hover: hover) {
+
+    .item-info:hover::before,
+    .secondblock:hover::before {
+        border-color: transparent;
+        transition: border-color 0.3s;
+    }
+}
+
+.item-info:active .more-item__text,
+.secondblock:active .more-item__text {
+    color: var(--color_white);
+    transition: color 0.3s;
+}
+
+.item-info:active::before,
+.secondblock:active::before {
+    border-color: transparent;
+    transition: border-color 0.3s;
+}

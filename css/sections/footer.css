@@ -1,0 +1,153 @@
+/* _________________________ FOOTER _________________________ */
+
+.footer__content {
+    justify-content: space-between;
+    padding: 45px 45px 0;
+    border-radius: var(--borrad-1);
+    background-color: var(--color_gray-5);
+    background-image: url('../../img/footer/footer__sunshine-icon.png');
+    background-repeat: no-repeat;
+    background-position: bottom right 19%;
+}
+
+/* __________ Copyright Block __________ */
+
+.footer__copyright {
+    max-width: 302px;
+    padding-bottom: 41px;
+}
+
+.copyright {
+    flex-direction: column;
+    gap: 37px;
+}
+
+.copyright__descr {
+    font-size: 16px;
+    line-height: 190%;
+    color: var(--color_white);
+}
+
+.copyright__descr-link,
+.contacts-phones__phone-tel,
+.contacts-emails__email-link {
+    position: relative;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color_gold-2);
+    outline: none;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+/* -(pseudo-elements for Link's)- */
+
+.copyright__descr-link::before,
+.contacts-phones__phone-tel::before,
+.contacts-emails__email-link::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.copyright__descr-link:focus-visible::before,
+.contacts-phones__phone-tel:focus-visible::before,
+.contacts-emails__email-link:focus-visible::before {
+    border-color: var(--color_gold-2);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+@media(any-hover: hover) {
+
+    .copyright__descr-link:hover:focus-visible::before,
+    .contacts-phones__phone-tel:hover:focus-visible::before,
+    .contacts-emails__email-link:hover:focus-visible::before {
+        border-color: transparent;
+        transition: border-color 0.3s;
+    }
+
+    .copyright__descr-link:hover,
+    .contacts-phones__phone-tel:hover,
+    .contacts-emails__email-link:hover {
+        color: var(--color_gold-1);
+        transition: color 0.3s;
+    }
+}
+
+.copyright__descr-link:active,
+.contacts-phones__phone-tel:active,
+.contacts-emails__email-link:active {
+    border-color: transparent;
+    color: var(--color_gold-3);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+/* __________ Contacts Block __________ */
+
+.footer__contacts {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacts-footer {
+    max-width: 500px;
+    width: 100%;
+}
+
+.contacts-footer__descr {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color_white);
+}
+
+.contacts-footer__phones,
+.contacts-footer__emails {
+    flex-direction: column;
+}
+
+.contacts-phones__phone-tel,
+.contacts-emails__email-link {
+    display: inline-block;
+}
+
+/* __________ Social Networks Block __________ */
+
+.socialnetworks {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.socialnetworks__link-one,
+.socialnetworks__link-two,
+.socialnetworks__link-three {
+    outline: none;
+}
+
+.socialnetworks__link-one-icon path,
+.socialnetworks__link-two-icon path,
+.socialnetworks__link-three-icon path {
+    transition: fill 0.3s;
+}
+
+/* -(pseudo-elements for Social Networks Link's)- */
+
+.socialnetworks__link-one:focus-visible .socialnetworks__link-one-icon path,
+.socialnetworks__link-two:focus-visible .socialnetworks__link-two-icon path,
+.socialnetworks__link-three:focus-visible .socialnetworks__link-three-icon path,
+.socialnetworks__link-one:hover .socialnetworks__link-one-icon path,
+.socialnetworks__link-two:hover .socialnetworks__link-two-icon path,
+.socialnetworks__link-three:hover .socialnetworks__link-three-icon path {
+    fill: var(--color_gold-2);
+    transition: fill 0.3s;
+}
+
+.socialnetworks__link-one:active .socialnetworks__link-one-icon path,
+.socialnetworks__link-two:active .socialnetworks__link-two-icon path,
+.socialnetworks__link-three:active .socialnetworks__link-three-icon path {
+    fill: var(--color_gold-3);
+    transition: fill 0.3s;
+}

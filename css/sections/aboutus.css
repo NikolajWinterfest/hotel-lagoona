@@ -1,0 +1,17 @@
+/* ____________________ AboutUs (SECTION) ____________________ */
+
+.aboutus {
+    padding-top: 70px;
+}
+
+.aboutus__title {
+    max-width: 500px;
+}
+
+.aboutus__descr {
+    max-width: 900px;
+    color: var(--color_black);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+}

@@ -1,0 +1,226 @@
+/* _________________________ HEADER _________________________ */
+
+.header {
+    padding-top: 25px;
+}
+
+/* __________ Primary Header __________ */
+
+.header__primary {
+    width: 100%;
+}
+
+.primary__list {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary__item {
+    align-items: center;
+}
+
+.primary__item-logo {
+    display: flex;
+    padding: 4px;
+    margin-right: 25px;
+    border: 1px solid transparent;
+    outline: none;
+    transform: translateX(-5px);
+    transition: border-color 0.3s;
+}
+
+.primary__item-logo:focus-visible {
+    border-color: var(--color_gold-2);
+    transition: border-color 0.3s;
+}
+
+.primary__item-tel {
+    padding: 4px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color_gray-4);
+    outline: none;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.personal-profile {
+    align-items: center;
+    padding: 4px;
+    border: 1px solid transparent;
+    outline: none;
+    transform: translateX(5px);
+    transition: border-color 0.3s;
+}
+
+.personal-profile__arrow-icon {
+    margin-right: 7px;
+    transform: translateY(-1px);
+    transition: fill 0.3s;
+}
+
+.personal-profile__arrow-icon path {
+    transition: fill 0.3s;
+}
+
+@keyframes arrow-move {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.personal-profile__text {
+    font-size: 16px;
+    color: var(--color_gold-2);
+    transition: color 0.3s;
+}
+
+/* -(pseudo-elements for Personal Profile and Tel)- */
+
+.primary__item-tel:focus-visible {
+    border-color: var(--color_gold-2);
+    color: var(--color_gold-2);
+}
+
+.personal-profile:focus-visible {
+    border-color: var(--color_gold-2);
+    transition: border-color 0.3s;
+}
+
+.personal-profile:hover.personal-profile:focus,
+.personal-profile:active.personal-profile:focus {
+    border-color: transparent;
+    transition: border-color 0.3s;
+}
+
+@media(any-hover) {
+    .primary__item-tel:hover {
+        color: var(--color_gold-2);
+        transition: color 0.3s;
+    }
+
+    .personal-profile:hover .personal-profile__arrow-icon path {
+        fill: var(--color_gold-1);
+        transition: fill 0.3s;
+        animation: arrow-move 0.5s ease;
+    }
+
+    .personal-profile:hover .personal-profile__text {
+        color: var(--color_gold-1);
+        transition: color 0.3s;
+    }
+}
+
+.primary__item-tel:active {
+    border-color: transparent;
+    color: var(--color_gold-3);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.personal-profile:active .personal-profile__arrow-icon path {
+    fill: var(--color_gold-3);
+    transition: fill 0.3s;
+}
+
+.personal-profile:active .personal-profile__text {
+    color: var(--color_gold-3);
+    transition: color 0.3s;
+}
+
+.personal-profile:active .personal-profile__arrow-icon path {
+    fill: var(--color_gold-3);
+    transition: fill 0.3s;
+}
+
+.personal-profile:active .personal-profile__text {
+    color: var(--color_gold-3);
+    transition: color 0.3s;
+}
+
+/* __________ Nav Menu Header __________ */
+
+.nav {
+    padding-top: 25px;
+}
+
+.menu {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    height: 70px;
+    border-radius: var(--borrad-1);
+    background-color: var(--color_white);
+}
+
+.menu__list {
+    gap: 40px;
+}
+
+.list-menu__list {
+    gap: 34px;
+}
+
+.list-menu__item-link {
+    padding: 4px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color_gray-4);
+    outline: none;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.menu__list-btn {
+    padding: 11px 20px;
+    border: 1px solid var(--color_gold-2);
+    border-radius: var(--borrad-2);
+    font-size: 16px;
+    color: var(--color_gold-2);
+    outline: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* -(pseudo-elements for Nav Menu)- */
+
+.list-menu__item-link:focus-visible {
+    border-color: var(--color_gold-2);
+    color: var(--color_gold-2);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.list-menu__item-link:hover {
+    color: var(--color_gold-2);
+    transition: color 0.3s;
+}
+
+.list-menu__item-link:active {
+    border-color: transparent;
+    color: var(--color_gold-3);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+/* -(pseudo-elements for Buttons "Find" and "Callback")- */
+
+.menu__list-btn:focus-visible {
+    color: var(--color_white);
+    background-color: var(--color_gold-2);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+@media(any-hover: hover) {
+    .menu__list-btn:hover {
+        color: var(--color_white);
+        background-color: var(--color_gold-2);
+        transition: color 0.3s, background-color 0.3s;
+    }
+}
+
+.menu__list-btn:active {
+    color: var(--color_white);
+    background-color: var(--color_gold-3);
+    transition: color 0.3s, background-color 0.3s;
+}

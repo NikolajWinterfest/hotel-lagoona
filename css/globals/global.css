@@ -1,0 +1,45 @@
+/* _________________________ GLOBAL _________________________ */
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+.flex {
+    display: flex;
+}
+
+.title {
+    padding-left: 40px;
+    padding-bottom: 20px;
+    max-width: 500px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: normal;
+    color: var(--color_gray-5);
+}
+
+:root {
+    --borrad-1: 15px;
+    --borrad-2: 10px;
+    --color_white: #FFFFFF;
+    --color_black: #000000;
+    --color_gold-1: #F0BF5F;
+    --color_gold-2: #CC9933;
+    --color_gold-3: #A47312;
+    --color_gray-1: #F1F1F1;
+    --color_gray-2: #E9E9E9;
+    --color_gray-3: #999999;
+    --color_gray-4: #666666;
+    --color_gray-5: #333333;
+    --color_linear-1: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+    --color_linear-2: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+}
