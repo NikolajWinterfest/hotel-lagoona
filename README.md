@@ -6,7 +6,7 @@
 
 ### Цель проекта:
 
-Сверстать лендинг страницу по HTML макету [Lagoona](<https://www.figma.com/file/hnO7SmG7SNPzFI11v4Ksf6/Lagoona-(Copy)?type=design&node-id=0-1&mode=design&t=ljF6poHvHiq1Kuut-0>)
+Сверстать лендинг страницу по макету [Lagoona](<https://www.figma.com/file/hnO7SmG7SNPzFI11v4Ksf6/Lagoona-(Copy)?type=design&node-id=0-1&mode=design&t=ljF6poHvHiq1Kuut-0>)
 
 ### Задачи проекта:
 
