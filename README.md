@@ -1,5 +1,9 @@
 ## О проекте
 
+<div>
+  <img src="/Hotel-Lagoona.png" title="Hotel Lagoona" alt="Hotel Lagoona" />&nbsp;
+</div>
+
 ### Цель проекта:
 
 Сверстать лендинг страницу по HTML макету [Lagoona](<https://www.figma.com/file/hnO7SmG7SNPzFI11v4Ksf6/Lagoona-(Copy)?type=design&node-id=0-1&mode=design&t=ljF6poHvHiq1Kuut-0>)
