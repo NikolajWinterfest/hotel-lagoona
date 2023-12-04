@@ -1,9 +1,10 @@
 ## О проекте
 
-Цель проекта:
-Сверстать лендинг страницу по HTML макету [Lagoona](<https://www.figma.com/file/hnO7SmG7SNPzFI11v4Ksf6/Lagoona-(Copy)?type=design&node-id=0-1&mode=design&t=ljF6poHvHiq1Kuut-0>)
+### Цель проекта:
 
-Задачи проекта:
+-   Сверстать лендинг страницу по HTML макету [Lagoona](<https://www.figma.com/file/hnO7SmG7SNPzFI11v4Ksf6/Lagoona-(Copy)?type=design&node-id=0-1&mode=design&t=ljF6poHvHiq1Kuut-0>)
+
+### Задачи проекта:
 
 -   Резиновая вёрстка
 -   Для формы бронирования, использовать временный запрос, который отправляет данные на "https://jsonplaceholder.typicode.com/posts" (Данный запрос выводит данные, которые были введены в форме)
